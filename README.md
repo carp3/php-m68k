@@ -27,6 +27,8 @@ Please refer to [Musashi's README file](https://github.com/kstenerud/Musashi).
 ## Extra Functions
 
 You need to register your memory call backs. you must call these methods BEFORE calling `m68k_pulse_reset` or `m68k_m68k_execute`
+
+
 Example:
 ```php
     m68k_init();
