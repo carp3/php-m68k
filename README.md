@@ -34,14 +34,14 @@ Example:
     m68k_init();
     
     
-    m68k_set_read_memory_8_callback([$this, 'read8']);
-    m68k_set_read_memory_16_callback([$this, 'read16']);
-    m68k_set_read_memory_32_callback([$this, 'read32']);
+    m68k_set_read_memory_8_callback('read8');
+    m68k_set_read_memory_16_callback('read16');
+    m68k_set_read_memory_32_callback('read32');
 
 
-    m68k_set_write_memory_8_callback([$this, 'write8']);
-    m68k_set_write_memory_16_callback([$this, 'write16']);
-    m68k_set_write_memory_32_callback([$this, 'write32']);
+    m68k_set_write_memory_8_callback('write8');
+    m68k_set_write_memory_16_callback('write16');
+    m68k_set_write_memory_32_callback('write32');
     
     
     m68k_pulse_reset();
