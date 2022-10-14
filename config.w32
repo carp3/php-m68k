@@ -1,0 +1,10 @@
+// $Id$
+// vim:ft=javascript
+
+ARG_ENABLE("m68k", "enable m68k", "no");
+
+if (PHP_M68K != "no") {
+	EXTENSION("m68k", "m68k.c");
+	AC_DEFINE('HAVE_M68K', 1 , 'whether m68k is enabled');
+	PHP_INSTALL_HEADERS("ext/m68k/", "m68k.h");
+}
